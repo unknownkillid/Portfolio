@@ -12,17 +12,56 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    cursor: none;
 }
 
 a {
     text-decoration: none;
     color: var(--text-color);
     transition: 0.6s;
+    cursor: none;
 }
 
 a:hover {
     color: crimson;
 }
+
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 2px solid crimson;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+    z-index: 999999;
+  }
+  
+  .cursor2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: rgb(217, 217, 217);
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+    z-index: 6666666;
+  }
+  
+  .hover {
+    background-color: crimson;
+    opacity: 0.5;
+  }
+  
+  .cursorinnerhover {
+    width: 50px;
+    height: 50px;
+    opacity: .5;
+  }
 
 .navbar-container {
     width: 100%;
@@ -67,7 +106,7 @@ a:hover {
 .navbar-social-media i {
     padding: 8px;
     font-size: large;
-    cursor: pointer;
+    cursor: none;
     color: var(--text-color);
     transition: 0.6s;
 }
@@ -230,7 +269,7 @@ a:hover {
     background-size: 80%;
     background-repeat: no-repeat;
     transition: 0.5s;
-    cursor: crosshair;
+    cursor: none;
 }
 
 .card1 {
@@ -319,7 +358,7 @@ a:hover {
 .read-more-button {
     width: 50%;
     height: 50px;
-    cursor: pointer;
+    cursor: none;
     background: none;
     color: white;
     font-family: var(--font-family);
@@ -377,7 +416,7 @@ a:hover {
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    cursor: crosshair;
+    cursor: none;
 }
 
 .card21 {
@@ -408,7 +447,7 @@ a:hover {
 
 .chain {
     font-size: small;
-    cursor: pointer;
+    cursor: none;
     text-decoration: underline;
     font-family: var(--font-family);
 }
@@ -449,7 +488,7 @@ a:hover {
 
 
 .burger-menu-button {
-    cursor: pointer;
+    cursor: none;
     width: 40px;
     height: 40px;
     position: relative;
@@ -465,7 +504,7 @@ a:hover {
     width: 30px;
     height: 3px;
     background-color: white;
-    cursor: pointer;
+    cursor: none;
 }
 
 .line1 {
@@ -512,8 +551,8 @@ a:hover {
     height: 52rem;
     overflow-y: scroll;
     position: fixed;
-    z-index: 88888888;
-    color: white;
+    z-index: 500;
+    color: var(--text-color);
     font-family: var(--font-family);
     font-size: large;
     display: none;
@@ -548,8 +587,9 @@ a:hover {
 }
 
 .xbtn {
-    cursor: pointer;
+    cursor: none;
     transition: 0.6s;
+    font-size: x-large;
 }
 
 .xbtn:hover {
