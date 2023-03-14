@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="navbar-container">
+                <div class="hidden">asdasdasdasdasdasd</div>
+                <div class="navbar-links">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Tech Stack</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Contact</a>
+                </div>
+
+                <div class="navbar-social-media">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-discord"></i>
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="section1" id="section1">
+
+
+        <div class="welcome-container">
+            <div class="text-container">
+                <p class="first-paragraph">Hi 👋,
+                    <br> My name is
+                    <br> <span class="nameSpan">Dante</span>
+                    <br> I build things for web
+                </p>
+
+                <button class="read-more-button">Read About Me</button>
+            </div>
+
+            <div class="pic-container">
+                <img src="assets/image (1).png" class="profile-pic" alt="">
+            </div>
+        </div>
+
+        <div class="scroll-down-container">
+            <p class="scroll-down-text">Scroll Down <br> <i class="fa-sharp fa-solid fa-arrow-down"></i></p>
+        </div>
+    </section>
+
+    <section class="section2" id="section2">
+        <h1 class="section2h1">My Tech Stack</h1>
+        <h3 class="section2h3">Technologies I’ve been working with recently</h3>
+
+        <br> <br>
+        <div class="logo-container first">
+            <div class="card card1" title="HTML5"></div>
+            <div class="card card2" title="CSS3"></div>
+            <div class="card card3" title="JavaScript"></div>
+            <div class="card card4" title="Visual Studio Code"></div>
+            <div class="card card5" title="Bootstrap"></div>
+        </div>
+        <div class="logo-container second">
+            <div class="card card6" title="Git"></div>
+            <div class="card card7" title="SASS"></div>
+            <div class="card card8" title="JQuery"></div>
+        </div>
+    </section>
+
+    <section class="section3" id="section3">
+        <h1 class="section3h1">Projects</h1>
+        <h3 class="section3h3">Things I’ve built so far</h3>
+        <br> <br>
+        <div class="cards-container" id="firstCardContainer">
+            <div class="cards" data-tilt>
+                <div class="card-img"></div>
+                <div class="card-content">
+                    <h1>WEB DESIGN AGENCY</h1>
+                    <p>Welcome to our black and white world! Our landing page features a sleek and modern design with a
+                        minimalist color scheme that exudes elegance and sophistication.</p>
+                    <br>
+                    <p>Tech stack : HTML , CSS, JS</p>
+                </div>
+                <div class="card-footer">
+            
+                        <h3><i class="fa-solid fa-link "> <span class="chain">Live Preview</span> </i></h3>
+                        <h3><i class="fa-brands fa-github "> <span class="chain">Project Code</span> </i></h3>
+                    
+                </div>
+            </div>
+            <div class="cards" data-tilt></div>
+            <div class="cards" data-tilt></div>
+            <div class="cards" data-tilt></div>
+        </div>
+        <div class="cards-container" id="secondtCardContainer">
+            <div class="cards" data-tilt></div>
+            <div class="cards" data-tilt></div>
+            <div class="cards" data-tilt></div>
+            <div class="cards" data-tilt></div>
+        </div>
+    </section>
+
+
+    <script src="logic/logic.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"
+        integrity="sha512-RX/OFugt/bkgwRQg4B22KYE79dQhwaPp2IZaA/YyU3GMo/qY7GrXkiG6Dvvwnds6/DefCfwPTgCXnaC6nAgVYw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
