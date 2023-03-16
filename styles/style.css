@@ -38,9 +38,9 @@ a:hover {
     top: 0;
     transform: translate(calc(-50% + 15px), -50%);
     z-index: 999999;
-  }
-  
-  .cursor2 {
+}
+
+.cursor2 {
     width: 20px;
     height: 20px;
     border-radius: 100%;
@@ -50,18 +50,18 @@ a:hover {
     pointer-events: none;
     transition: width .3s, height .3s, opacity .3s;
     z-index: 6666666;
-  }
-  
-  .hover {
+}
+
+.hover {
     background-color: crimson;
     opacity: 0.5;
-  }
-  
-  .cursorinnerhover {
+}
+
+.cursorinnerhover {
     width: 50px;
     height: 50px;
     opacity: .5;
-  }
+}
 
 .navbar-container {
     width: 100%;
@@ -293,7 +293,7 @@ a:hover {
 }
 
 .card6 {
-    background-image: url(https://i.postimg.cc/y8NS7BX9/Vector-1.png);
+    background-image: url(https://i.postimg.cc/7ZPNG5XX/github.png);
 }
 
 .card7 {
@@ -304,6 +304,10 @@ a:hover {
     background-image: url(https://i.postimg.cc/J04Rj7h5/jquery.png);
 }
 
+.card9 {
+    background-image: url(https://i.postimg.cc/B6n8PfGk/Threejs-logo.png);
+}
+
 .card:hover {
     scale: 110%;
 }
@@ -311,8 +315,9 @@ a:hover {
 .cardmove {
     animation: card1 infinite 5s;
     opacity: 1;
-
 }
+
+
 
 @keyframes card1 {
     0% {
@@ -453,7 +458,7 @@ a:hover {
 }
 
 .card-footer h3 {
- padding:0 3px;
+    padding: 0 3px;
 }
 
 .firstCotnainerAnimation {
@@ -499,7 +504,7 @@ a:hover {
     display: none;
 }
 
-.burger-menu-button div{
+.burger-menu-button div {
     position: absolute;
     width: 30px;
     height: 3px;
@@ -548,16 +553,18 @@ a:hover {
 .about-container {
     width: 90%;
     background-color: rgba(0, 0, 0, 0.942);
-    height: 52rem;
+    height: 100vh;
     overflow-y: scroll;
     position: fixed;
-    z-index: 500;
+    z-index: 531230;
     color: var(--text-color);
     font-family: var(--font-family);
     font-size: large;
     display: none;
     animation: aboutwindowanim 1s forwards;
     opacity: 0;
+    padding: 0 100px;
+    transform: translate(6%, 0%);
 }
 
 @keyframes aboutwindowanim {
@@ -627,7 +634,7 @@ span {
 .navbar-links-burger {
     width: 100%;
     position: fixed;
-    height: 50rem;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.935);
     z-index: 100;
     display: flex;
@@ -674,7 +681,7 @@ span {
         justify-content: space-evenly;
         height: 50rem;
     }
-    
+
     .logo-container {
         width: 692px;
     }
@@ -726,6 +733,7 @@ span {
 }
 
 @media screen and (max-width: 766px) {
+
     .navbar-links {
         display: none;
     }
@@ -745,7 +753,7 @@ span {
     }
 
     .section1 {
-        height: 50rem;
+        height: 100%;
     }
 }
 
@@ -759,5 +767,20 @@ span {
 @media screen and (min-width: 1920px) {
     body {
         zoom: 150%;
+    }
+}
+
+@media screen and (max-width: 415px) {
+
+    .cursor,
+    .cursor2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-container {
+        padding: 10px;
+        height: 100%;
     }
 }
