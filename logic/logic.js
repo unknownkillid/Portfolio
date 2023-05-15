@@ -108,4 +108,24 @@ aboutButton.addEventListener('click', () => {
 xButton.addEventListener('click', () => {
     aboutCotainer.style.display = "none";
     document.body.style.overflowY = "scroll"
+    certificateContainer.style.display = "none"
+    contentContainer.classList.remove('contactsnone');
+    back.style.display = "none"
 });
+
+const contentContainer = document.getElementById('contentContainer')
+const certificateButton = document.getElementById('certificatesBtn')
+const certificateContainer = document.getElementById('certificateContainer')
+
+certificateButton.addEventListener('click', () => {
+    contentContainer.classList.add('contactsnone')
+    certificateContainer.style.display = "flex"
+    back.style.display = "block"
+})
+
+const back = document.getElementById('backbutton')
+back.addEventListener('click', () => {
+    back.style.display = "none"
+    certificateContainer.style.display = "none"
+    contentContainer.classList.remove('contactsnone');
+})

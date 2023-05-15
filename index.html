@@ -64,27 +64,56 @@
         <header>
             <nav>
                 <div class="about-nav">
+                    <div class="backbutton" id="backbutton"><i class="fa-solid fa-arrow-left"></i></div>
                     <div></div>
                     <div class="xbtn">X</div>
                 </div>
             </nav>
         </header>
 
-        <div class="content-main-container">
+        <div class="certificateContainer" id="certificateContainer">
+            <div class="certificatecard">
+                <a href="https://www.coursera.org/account/accomplishments/verify/FEELGJKX2M6L" target="_blank"><h1>Introduction to Front-End Development</h1></a>
+                <img src="https://i.postimg.cc/mkTbHRGR/Screenshot-2023-05-15-125521.png" width="400px" alt="">
+            </div>
+            <div class="certificatecard">
+                <a href="https://www.coursera.org/account/accomplishments/verify/6QNL25VMT7L6" target="_blank"><h1>Programming with JavaScript</h1></a>
+                <img src="https://i.postimg.cc/y8DvHZS4/Screenshot-2023-05-15-125838.png" width="400px" alt="">
+            </div>
+            <div class="certificatecard">
+                <a href="https://www.coursera.org/account/accomplishments/verify/ZN8HFCWXRZWT" target="_blank"><h1>Version Control</h1></a>
+                <img src="https://i.postimg.cc/C1RcFn2f/vc.png" width="400px" alt="">
+            </div>
+            <div class="certificatecard">
+               <a href="https://www.coursera.org/account/accomplishments/verify/W5VM32DCXGN4" target="_blank"><h1>HTML and CSS in depth</h1></a>
+                <img src="https://i.postimg.cc/ZR516qMT/html.png" width="400px" alt="">
+            </div>
+            <div class="certificatecard">
+                <a href="https://www.coursera.org/account/accomplishments/verify/BE9GSRWS5GAH" target="_blank"><h1>React Basics</h1></a>
+                <img src="https://i.postimg.cc/J0frTXf3/react.png" width="400px" alt="">
+            </div>
+
+        </div>
+
+        <div class="content-main-container" id="contentContainer">
             <h1>Front End Developer</h1>
 
-            <p>I am writing to express my interest in the Front End Web Developer. As someone who has been self-
-                teaching front-end web development for the past three months, I am confident that I have the skills
-                and
-                passion necessary to contribute to a team. During my self-study, I have gained a solid understanding
-                of
-                HTML, CSS, and JavaScript, as well as familiarity with various front-end frameworks and libraries
-                like
-                JQuery and Bootstrap. I have also worked on several personal projects that have allowed me to put my
-                skills into practice and develop my problem-solving abilities. While my experience may be limited,
-                my
-                passion for web development and eagerness to learn are boundless. I am confident that I can quickly
-                become an asset to a team and contribute to a company's success.
+            <p>
+                As a front-end web developer with a year of experience, I have gained a strong knowledge of various web
+                development technologies. I am proficient in HTML, CSS, JavaScript, Three.js, jQuery, Sass, SCSS,
+                Bootstrap, and React basics. I spend most of my day coding, putting in around 8 to 9 hours of work each
+                day.
+
+                <br> <br> I have had the opportunity to explore various professions before finding my true passion in
+                programming.
+                I have worked as a tattoo master, a dental technician, and even as a YouTuber. However, it is through
+                programming that I have found my calling. When I am writing code, I am completely immersed in my work,
+                and it feels like I am in my own world.
+
+                <br> <br> My ultimate goal is to become a full-stack web developer, and I am constantly working towards
+                achieving
+                that. I am also interested in learning other programming languages to expand my knowledge and skills. I
+                am passionate about my work, and I am always eager to take on new challenges and opportunities.
             </p>
 
             <br>
@@ -100,15 +129,12 @@
             <p>I like <span>Video Games</span>, <span>Watching Movies</span>, <span>Tattooing</span>,
                 <span>Camping</span> and <span>Painting</span>
             </p>
+
+            <br><br><Button class="certificatesButton" id="certificatesBtn">See all certificates</Button>
         </div>
     </div>
 
     <section class="section1" id="section1">
-
-        
-
-
-
         <div class="welcome-container">
             <div class="text-container">
                 <p class="first-paragraph">Hi 👋,
@@ -175,7 +201,27 @@
 
                 </div>
             </div>
-            <div class="cards" data-tilt></div>
+            <div class="cards cardgame" data-tilt>
+                <div class="card-iamgegame"></div>
+                <div class="card-content">
+                    <h1>Little Platformer Game</h1>
+                    <p>This Georgian language zombie platformer game (In progress) features unique dialogue and enemies
+                        as you fight your way through hordes of zombies to reach safety.
+                    </p>
+                    <br>
+                    <p>Tech stack : HTML Canvas, CSS, JS</p>
+                </div>
+                <div class="card-footer">
+
+                    <a target="_blank" href="https://unknownkillid.github.io/NaxevradZombieGela/">
+                        <h3><i class="fa-solid fa-link "> <span class="chain">Live Preview</span> </i></h3>
+                    </a>
+                    <a target="_blank" href="https://github.com/unknownkillid/NaxevradZombieGela">
+                        <h3><i class="fa-brands fa-github "> <span class="chain">Project Code</span> </i></h3>
+                    </a>
+
+                </div>
+            </div>
             <div class="cards" data-tilt></div>
             <div class="cards" data-tilt></div>
         </div>
@@ -186,6 +232,7 @@
             <div class="cards" data-tilt></div>
         </div>
     </section>
+
 
     <footer class="footer" id="footer">
         <div class="footer-container1">
@@ -221,6 +268,7 @@
             </div>
         </div>
     </footer>
+
 
 
     <script src="logic/logic.js"></script>

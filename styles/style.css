@@ -399,6 +399,22 @@ a:hover {
     background-size: cover;
 }
 
+.card-iamgegame {
+    width: 245px;
+    height: 10rem;
+    background-image: url(https://i.postimg.cc/FKWMY7Sv/zombiecage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cardgame {
+    background-color: #00bddc;
+    background-image: linear-gradient(298deg, #00bddc 0%, #2c7560 28%, #000000 66%);
+
+
+}
+
 .card-content {
     padding: 10px;
 }
@@ -513,11 +529,13 @@ a:hover {
 }
 
 .about-container {
-    width: 90%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.942);
     height: 100vh;
     overflow-y: scroll;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 531230;
     color: var(--text-color);
     font-family: var(--font-family);
@@ -526,7 +544,6 @@ a:hover {
     animation: aboutwindowanim 1s forwards;
     opacity: 0;
     padding: 0 100px;
-    transform: translate(6%, 0%);
 }
 
 @keyframes aboutwindowanim {
@@ -559,6 +576,7 @@ a:hover {
     cursor: pointer;
     transition: 0.6s;
     font-size: x-large;
+    cursor: pointer;
 }
 
 .xbtn:hover {
@@ -570,7 +588,62 @@ span {
 }
 
 .content-main-container {
+    text-align: start;
+}
+
+.fa-solid {
+    z-index: -23;
+}
+
+.backbutton {
+    display: block;
+    font-size: x-large;
+    transition: 0.6s;
     text-align: center;
+    z-index: 30;
+    display: none;
+}
+
+.containerflex {
+    display: flex;
+}
+
+.certificateContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    height: 100vh;
+}
+
+
+
+.certificatecard {
+    width: 500px;
+    height: auto;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.certificatecard h1 {
+    font-size: x-large;
+    margin-bottom: 20px;
+    transition: 0.4s;
+}
+
+.certificatecard h1:hover {
+    color: crimson;
+    cursor: pointer;
+}
+
+.backbutton:hover {
+    color: crimson;
+}
+
+.contactsnone {
+    display: none;
 }
 
 .textcontainerfooter {
@@ -581,6 +654,23 @@ span {
     flex-direction: row;
     justify-content: space-between;
     height: 5rem;
+}
+
+.certificatesButton {
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-size: large;
+    border: 2px solid white;
+    background: none;
+    color: white;
+    transition: 0.4s;
+}
+
+.certificatesButton:hover {
+    border: 2px solid crimson;
+    color: crimson;
 }
 
 .funtext {
@@ -726,9 +816,13 @@ span {
     }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1919px) {
     body {
-        zoom: 150%;
+        zoom: 130%;
+    }
+
+    .certificateContainer {
+        zoom: 70%;
     }
 }
 
