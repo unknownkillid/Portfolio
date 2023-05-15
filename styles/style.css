@@ -609,33 +609,58 @@ span {
 }
 
 .certificateContainer {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     display: none;
     height: 100vh;
 }
 
+@media screen and (max-width: 810px) {
+    #certificateimage {
+        width: 500px;
+    }
+}
+@media screen and (max-width: 514px) {
+    #certificateimage {
+        width: 300px;
+    }
 
+    #select {
+        width: 300px;
+        font-size: medium;
+    }
+}
 
-.certificatecard {
-    width: 500px;
+.certificatelink {
+    margin-bottom: 10px;
+}
+
+.certificateimageContainer {
+    width: 70%;
     height: auto;
-    text-align: center;
-    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-.certificatecard h1 {
+select {
+    width: 500px;
+    height: 50px;
+    outline: none;
+    background: none;
+    color: white;
+    font-family: var(--font-family);
     font-size: x-large;
-    margin-bottom: 20px;
-    transition: 0.4s;
+    border: 2px solid crimson;
+    text-align: center;
 }
 
-.certificatecard h1:hover {
-    color: crimson;
-    cursor: pointer;
+option {
+    background-color: crimson;
 }
 
 .backbutton:hover {

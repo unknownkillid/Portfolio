@@ -72,25 +72,18 @@
         </header>
 
         <div class="certificateContainer" id="certificateContainer">
-            <div class="certificatecard">
-                <a href="https://www.coursera.org/account/accomplishments/verify/FEELGJKX2M6L" target="_blank"><h1>Introduction to Front-End Development</h1></a>
-                <img src="https://i.postimg.cc/mkTbHRGR/Screenshot-2023-05-15-125521.png" width="400px" alt="">
-            </div>
-            <div class="certificatecard">
-                <a href="https://www.coursera.org/account/accomplishments/verify/6QNL25VMT7L6" target="_blank"><h1>Programming with JavaScript</h1></a>
-                <img src="https://i.postimg.cc/y8DvHZS4/Screenshot-2023-05-15-125838.png" width="400px" alt="">
-            </div>
-            <div class="certificatecard">
-                <a href="https://www.coursera.org/account/accomplishments/verify/ZN8HFCWXRZWT" target="_blank"><h1>Version Control</h1></a>
-                <img src="https://i.postimg.cc/C1RcFn2f/vc.png" width="400px" alt="">
-            </div>
-            <div class="certificatecard">
-               <a href="https://www.coursera.org/account/accomplishments/verify/W5VM32DCXGN4" target="_blank"><h1>HTML and CSS in depth</h1></a>
-                <img src="https://i.postimg.cc/ZR516qMT/html.png" width="400px" alt="">
-            </div>
-            <div class="certificatecard">
-                <a href="https://www.coursera.org/account/accomplishments/verify/BE9GSRWS5GAH" target="_blank"><h1>React Basics</h1></a>
-                <img src="https://i.postimg.cc/J0frTXf3/react.png" width="400px" alt="">
+            <select name="certificatesOption" id="select">
+                <option value="developer">Introduction to Front-End Development</option>
+                <option value="js">Programming with JavaScript</option>
+                <option value="depth">HTML and CSS in depth</option>
+                <option value="control">Version Control</option>
+                <option value="react">React Basics</option>
+            </select>
+
+            <div class="certificateimageContainer">
+                <a href="https://www.coursera.org/account/accomplishments/verify/FEELGJKX2M6L" class="certificatelink" target="_blank">Check
+                    Certificate</a>
+                <img src="./assets/certificates/1.png" id="certificateimage" width="800px" alt="">
             </div>
 
         </div>

@@ -129,3 +129,40 @@ back.addEventListener('click', () => {
     certificateContainer.style.display = "none"
     contentContainer.classList.remove('contactsnone');
 })
+
+
+
+
+const select = document.getElementById('select');
+const image = document.getElementById('certificateimage');
+const link = document.querySelector('.certificatelink');
+
+select.addEventListener('change', () => {
+  const selectedOption = select.value;
+  
+  switch (selectedOption) {
+    case 'developer':
+      image.src = './assets/certificates/1.png';
+      link.href = 'https://www.coursera.org/account/accomplishments/verify/FEELGJKX2M6L';
+      break;
+    case 'js':
+      image.src = './assets/certificates/2.png';
+      link.href = 'https://www.coursera.org/account/accomplishments/verify/6QNL25VMT7L6';
+      break;
+    case 'depth':
+      image.src = './assets/certificates/3.png';
+      link.href = 'https://www.coursera.org/account/accomplishments/verify/W5VM32DCXGN4';
+      break;
+    case 'control':
+      image.src = './assets/certificates/4.png';
+      link.href = 'https://www.coursera.org/account/accomplishments/verify/ZN8HFCWXRZWT';
+      break;
+    case 'react':
+      image.src = './assets/certificates/5.png';
+      link.href = 'https://www.coursera.org/account/accomplishments/verify/BE9GSRWS5GAH';
+      break;
+    default:
+      image.src = '';
+      link.href = '#';
+  }
+});
