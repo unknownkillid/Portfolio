@@ -269,6 +269,7 @@ a:hover {
 .card9 {
     background-image: url(https://i.postimg.cc/B6n8PfGk/Threejs-logo.png);
 }
+
 .card10 {
     background-image: url(https://i.postimg.cc/T3JMx8hX/584830f5cef1014c0b5e4aa1.png);
 }
@@ -411,10 +412,23 @@ a:hover {
     background-size: cover;
 }
 
+.card-weather {
+    width: 245px;
+    height: 10rem;
+    background-image: url(https://i.postimg.cc/qv95b0Dy/615db40f-5f55-430e-a025-d5a1a7f8599f.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .cardgame {
     background-color: #00bddc;
     background-image: linear-gradient(298deg, #00bddc 0%, #2c7560 28%, #000000 66%);
+}
 
+.cardweather {
+    background-color: #000000;
+    background-image: linear-gradient(298deg, #d0ab80 0%, #000000 66%);
 
 }
 
@@ -626,6 +640,7 @@ span {
         width: 500px;
     }
 }
+
 @media screen and (max-width: 514px) {
     #certificateimage {
         width: 300px;
